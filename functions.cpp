@@ -9,12 +9,14 @@ void randomTAB(int *tab, int len){
         tab[i] = rand()%20+0;
     }
 }
+
 void printTAB(int *tab, int len){
     //qDebug() << "print tab";
     for(int i = 0 ; i<len ; i++){
         cout<<"tab["<<i<<"] = "<<tab[i]<<" ";
     }
 }
+
 void heap_func(int *tab, int len, int i){
     int largest = i;
     int left = 2*i+1;
@@ -70,6 +72,7 @@ void insertionSORT(int *tab, int len){
         tab[j+1]=k;
     }
 }
+
 void quickSORT(int *tab, int len){
 
 }
